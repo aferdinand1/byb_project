@@ -169,6 +169,7 @@ def add_task(menu):
         task_file.write("\n".join(task_list_to_write))
     print("Task successfully added.")
 
+# Function to view all tasks registered on the program
 def view_all(menu):
     '''Reads the task from task.txt file and prints to the console in the 
     format of Output 2 presented in the task pdf (i.e. includes spacing
@@ -182,6 +183,7 @@ def view_all(menu):
         disp_str += f"Task Description: \n {t['description']}\n"
         print(disp_str)
 
+# Functions to see user tasks
 def view_mine(menu):
     '''Reads the task from task.txt file and prints to the console in the 
         format of Output 2 presented in the task pdf (i.e. includes spacing
