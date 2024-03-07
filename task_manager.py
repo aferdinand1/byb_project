@@ -15,6 +15,7 @@ DATETIME_STRING_FORMAT = "%Y-%m-%d"
 if not os.path.exists("tasks.txt"):
     with open("tasks.txt", "w") as default_file:
         pass
+    
 
 with open("tasks.txt", 'r') as task_file:
     task_data = task_file.read().split("\n")
