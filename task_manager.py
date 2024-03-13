@@ -15,6 +15,10 @@ DATETIME_STRING_FORMAT = "%Y-%m-%d"
 if not os.path.exists("tasks.txt"):
     with open("tasks.txt", "w") as default_file:
         pass
+<<<<<<< HEAD
+=======
+    
+>>>>>>> master
 
 with open("tasks.txt", 'r') as task_file:
     task_data = task_file.read().split("\n")
@@ -117,7 +121,11 @@ def reg_user(menu):
 
     
     
+<<<<<<< HEAD
 # Function to add tasks in the program
+=======
+
+>>>>>>> master
 def add_task(menu):
     '''Allow a user to add a new task to task.txt file
     Prompt a user for the following: 
@@ -169,7 +177,11 @@ def add_task(menu):
         task_file.write("\n".join(task_list_to_write))
     print("Task successfully added.")
 
+<<<<<<< HEAD
 # Function to view all user tasks
+=======
+# Function to view all tasks registered on the program
+>>>>>>> master
 def view_all(menu):
     '''Reads the task from task.txt file and prints to the console in the 
     format of Output 2 presented in the task pdf (i.e. includes spacing
@@ -183,7 +195,11 @@ def view_all(menu):
         disp_str += f"Task Description: \n {t['description']}\n"
         print(disp_str)
 
+<<<<<<< HEAD
 # Function to see logged in user task
+=======
+# Functions to see user tasks
+>>>>>>> master
 def view_mine(menu):
     '''Reads the task from task.txt file and prints to the console in the 
         format of Output 2 presented in the task pdf (i.e. includes spacing
@@ -205,7 +221,12 @@ def view_mine(menu):
             # Add task number to the counter
             task_number_counter.append(task_number)
             print(disp_str)
+<<<<<<< HEAD
             
+=======
+    
+    
+>>>>>>> master
     # Ask if user would like to edit the tasks
     task_select_option = input("Would you like to select a task? (y/n): ").lower()
     while task_select_option not in ["n", "y"]:
@@ -216,7 +237,10 @@ def view_mine(menu):
         task_select()
     elif task_select_option == "n":
         print("\nYou will now return to the main menu.")
+<<<<<<< HEAD
     
+=======
+>>>>>>> master
 
 # Function for getting number of user tasks
 def task_number_counter():
@@ -561,6 +585,10 @@ def user_overview():
         user_overdue_tasks_percentages_list.append(f"{u}: {user_overdue_tasks_percentages[u]}")
     user_overdue_tasks_percentages_formatted = ("\n").join(user_overdue_tasks_percentages_list)
 
+<<<<<<< HEAD
+=======
+# Text format for saving information to text file.
+>>>>>>> master
     file_update = f'''User overview
 
 The total number of users registered: {user_number}
