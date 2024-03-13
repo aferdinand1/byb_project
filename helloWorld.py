@@ -5,6 +5,14 @@ def input_from_user():
     
     print(text)
 
+def question_time():
+    question = input("Would you like to input another text? (y/n): ").lower()
+    if question == "y":
+        input_from_user()
+    else:
+        print("Ok bye.")
+
 input_from_user()
+question_time()
 
 
