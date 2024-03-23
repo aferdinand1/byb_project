@@ -9,8 +9,10 @@ def question_time():
     question = input("Would you like to input another text? (y/n): ").lower()
     if question == "y":
         input_from_user()
-    else:
+    elif question == "n":
         print("Ok bye.")
+    else:
+        print("You have entered an incorrect statement.")
 
 input_from_user()
 question_time()
